@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*  Purpose:    Get the total of an item using the user inputed price and tax.
+ *  Input:      price in dollars and cents
+ *  Outputs:    sales total
+ *  Algorithm:  Step 1: Ask the user for the sale price, then read the user's input
+ *              Step 2: Caclulate the sales total using the formula:
+ *                      total = price + tax;
+ *                      where tax = price * 0.05
+ *              Step 3: Display the computed total of the item to the screen.
+ *  Last modified:  2022-01-12
+ */
+using System;
 
 namespace SalesApp
 {
