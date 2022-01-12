@@ -11,9 +11,11 @@ namespace SalesApp
                 tax,
                 total;
             // Assign values to variables
-            price = 29.75;
-            tax = 1.76;
-            total = 31.51;
+            Console.Write("What is the price?: ");
+            String pricestring = Console.ReadLine();
+            price = int.Parse(pricestring);
+            tax = price * 0.05;
+            total = price + tax;
             // Write to the screen the price, tax, and total.
             Console.WriteLine($"The price of the item is {price:C}");
             Console.WriteLine($"The tax is {tax:C}");
