@@ -23,7 +23,7 @@ namespace SSExercise1
 
             Console.Write("Enter your annual salary: ");
             String salaryInputString = Console.ReadLine();
-            annualPay = int.Parse(salaryInputString);
+            annualPay = double.Parse(salaryInputString);
 
             Console.WriteLine($"My name is {name}, my age is {age} and I hope to earn {annualPay:c} per year");
         }
