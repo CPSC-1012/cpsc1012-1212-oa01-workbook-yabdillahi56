@@ -13,7 +13,7 @@ namespace MathTutor02
             // add up varaibles for correct answer
             int correctAnswer = num1 + num2;
             //loop each time if user wants to try again to answer correctly
-            bool tryagain = false;
+            bool tryAgain = false;
             int numOfAttempts = 0;
             do
             {
@@ -25,7 +25,7 @@ namespace MathTutor02
                 {
                     //correct answer
                     Console.WriteLine($"Correct! {num1} + {num2} = {correctAnswer}. You got the correct answer in {numOfAttempts} attempts.");
-                    tryagain = false;
+                    tryAgain = false;
                 }
                 else
                 {
@@ -35,15 +35,15 @@ namespace MathTutor02
                     tryagainString = tryagainString.ToLower();
                     if(tryagainString == "y")
                     {
-                        tryagain = true;
+                        tryAgain = true;
                     }
                     else
                     {
                         Console.WriteLine($"The correct answer is {correctAnswer}. You had taken {numOfAttempts} attempts.");
-                        tryagain = false;
+                        tryAgain = false;
                     }
                 }
-            } while (tryagain == true);
+            } while (tryAgain == true);
         }
         static int PromptForIntegerValue(string message)
         {
